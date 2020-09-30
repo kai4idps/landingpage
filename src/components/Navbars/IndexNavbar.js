@@ -119,9 +119,9 @@ function IndexNavbar() {
             </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
+                onClick={() => history.push("/codepen")}
                 target="_self"
+                style={{ cursor: "pointer" }}
               >
                 <i className="nc-icon nc-book-bookmark" /> 3Documentation
               </NavLink>
