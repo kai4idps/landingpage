@@ -7,7 +7,7 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container
+  Container,
 } from "reactstrap"
 import { useHistory } from "react-router-dom"
 
@@ -58,7 +58,7 @@ function IndexNavbar() {
           <button
             aria-expanded={navbarCollapse}
             className={classnames("navbar-toggler navbar-toggler", {
-              toggled: navbarCollapse
+              toggled: navbarCollapse,
             })}
             onClick={toggleNavbarCollapse}
           >
@@ -73,7 +73,7 @@ function IndexNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
+            {/* <NavItem>
               <NavLink
                 data-placement="bottom"
                 href="https://twitter.com/CreativeTim?ref=creativetim"
@@ -105,11 +105,11 @@ function IndexNavbar() {
                 <i className="fa fa-instagram" />
                 <p className="d-lg-none">Instagram</p>
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
+                href="https://github.com/kai4idps"
                 target="_self"
                 title="Star on GitHub"
               >
@@ -123,7 +123,7 @@ function IndexNavbar() {
                 target="_self"
                 style={{ cursor: "pointer" }}
               >
-                <i className="nc-icon nc-book-bookmark" /> 3Documentation
+                <i className="nc-icon nc-book-bookmark" /> 作品集
               </NavLink>
             </NavItem>
             <NavItem>
