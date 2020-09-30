@@ -9,17 +9,17 @@
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from "react"
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap"
 
 // core components
 
@@ -42,7 +42,7 @@ function SectionDark() {
         </Container>
       </div>
     </>
-  );
+  )
 }
 
-export default SectionDark;
+export default SectionDark

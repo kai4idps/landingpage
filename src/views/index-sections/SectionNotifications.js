@@ -9,24 +9,24 @@
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from "react"
 
 // reactstrap components
-import { Alert, Container } from "reactstrap";
+import { Alert, Container } from "reactstrap"
 
 // core components
 
 function SectionNotifications() {
-  const [alertSuccess, setAlertSuccess] = React.useState(true);
-  const [alertWarning, setAlertWarning] = React.useState(true);
-  const [alertDanger, setAlertDanger] = React.useState(true);
+  const [alertSuccess, setAlertSuccess] = React.useState(true)
+  const [alertWarning, setAlertWarning] = React.useState(true)
+  const [alertDanger, setAlertDanger] = React.useState(true)
   return (
     <>
       <Container className="tim-container">
@@ -101,7 +101,7 @@ function SectionNotifications() {
         </Alert>
       </div>
     </>
-  );
+  )
 }
 
-export default SectionNotifications;
+export default SectionNotifications

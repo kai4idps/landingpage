@@ -9,17 +9,17 @@
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from "react"
 
 // reactstrap components
-import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
+import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap"
 
 // core components
 
@@ -77,7 +77,7 @@ function SectionDownload() {
                 color="twitter-bg"
                 href="#pablo"
                 id="tooltip3373767"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 <i className="fa fa-twitter" /> Twitter
               </Button>
@@ -89,7 +89,7 @@ function SectionDownload() {
                 color="google-bg"
                 href="#pablo"
                 id="tooltip840791273"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 <i className="fa fa-google-plus" /> Google
               </Button>
@@ -101,7 +101,7 @@ function SectionDownload() {
                 color="facebook-bg"
                 href="#pablo"
                 id="tooltip68961360"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 <i className="fa fa-facebook-square" /> Facebook
               </Button>
@@ -125,7 +125,7 @@ function SectionDownload() {
         </Container>
       </div>
     </>
-  );
+  )
 }
 
-export default SectionDownload;
+export default SectionDownload

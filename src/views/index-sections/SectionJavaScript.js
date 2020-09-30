@@ -9,16 +9,16 @@
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from "react"
 // react plugin used to create datetimepicker
-import ReactDatetime from "react-datetime";
+import ReactDatetime from "react-datetime"
 
 // reactstrap components
 import {
@@ -34,16 +34,16 @@ import {
   UncontrolledTooltip,
   PopoverBody,
   PopoverHeader,
-  UncontrolledPopover,
-} from "reactstrap";
+  UncontrolledPopover
+} from "reactstrap"
 
 // core components
 
 function SectionJavaScript() {
-  const [modal, setModal] = React.useState(false);
+  const [modal, setModal] = React.useState(false)
   const toggleModal = () => {
-    setModal(!modal);
-  };
+    setModal(!modal)
+  }
   return (
     <>
       <div className="section javascript-components">
@@ -126,7 +126,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip344834141"
                 outline
-                onClick={(e) => e.target.focus()}
+                onClick={e => e.target.focus()}
               >
                 On top
               </Button>
@@ -145,7 +145,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip493417725"
                 outline
-                onClick={(e) => e.target.focus()}
+                onClick={e => e.target.focus()}
               >
                 On bottom
               </Button>
@@ -164,7 +164,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip746845223"
                 outline
-                onClick={(e) => e.target.focus()}
+                onClick={e => e.target.focus()}
               >
                 On left
               </Button>
@@ -183,7 +183,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip909471006"
                 outline
-                onClick={(e) => e.target.focus()}
+                onClick={e => e.target.focus()}
               >
                 On right
               </Button>
@@ -209,7 +209,7 @@ function SectionJavaScript() {
                     <InputGroup className="date" id="datetimepicker">
                       <ReactDatetime
                         inputProps={{
-                          placeholder: "Datetime Picker Here",
+                          placeholder: "Datetime Picker Here"
                         }}
                       />
                       <InputGroupAddon addonType="append">
@@ -296,7 +296,7 @@ function SectionJavaScript() {
         </Container>
       </div>{" "}
     </>
-  );
+  )
 }
 
-export default SectionJavaScript;
+export default SectionJavaScript

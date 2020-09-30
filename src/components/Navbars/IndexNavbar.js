@@ -1,37 +1,19 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import React from "react"
-// nodejs library that concatenates strings
+import React, { useEffect } from "react"
 import classnames from "classnames"
-// reactstrap components
 import {
-  Button,
   Collapse,
   NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
   Nav,
-  Container,
+  Container
 } from "reactstrap"
+import { useHistory } from "react-router-dom"
 
 function IndexNavbar() {
+  let history = useHistory()
+
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent")
   const [navbarCollapse, setNavbarCollapse] = React.useState(false)
 
@@ -40,7 +22,7 @@ function IndexNavbar() {
     document.documentElement.classList.toggle("nav-open")
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 299 ||
@@ -67,16 +49,16 @@ function IndexNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
+            onClick={() => history.push("/index")}
+            style={{ cursor: "pointer" }}
+            title="Coded by kai"
           >
             kai
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
             className={classnames("navbar-toggler navbar-toggler", {
-              toggled: navbarCollapse,
+              toggled: navbarCollapse
             })}
             onClick={toggleNavbarCollapse}
           >
@@ -95,7 +77,7 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://twitter.com/CreativeTim?ref=creativetim"
-                target="_blank"
+                target="_self"
                 title="Follow us on Twitter"
               >
                 <i className="fa fa-twitter" />
@@ -106,7 +88,7 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                target="_blank"
+                target="_self"
                 title="Like us on Facebook"
               >
                 <i className="fa fa-facebook-square" />
@@ -117,7 +99,7 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
+                target="_self"
                 title="Follow us on Instagram"
               >
                 <i className="fa fa-instagram" />
@@ -128,7 +110,7 @@ function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
-                target="_blank"
+                target="_self"
                 title="Star on GitHub"
               >
                 <i className="fa fa-github" />
@@ -137,22 +119,21 @@ function IndexNavbar() {
             </NavItem>
             <NavItem>
               <NavLink
+                data-placement="bottom"
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
-                target="_blank"
+                target="_self"
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
+                <i className="nc-icon nc-book-bookmark" /> 3Documentation
               </NavLink>
             </NavItem>
             <NavItem>
-              <Button
-                className="btn-round"
-                color="danger"
-                href="#pablo"
-                target="_blank"
-                disabled
+              <NavLink
+                target="_self"
+                onClick={() => history.push("/example")}
+                style={{ cursor: "pointer" }}
               >
-                Upgrade to Pro
-              </Button>
+                <i className="nc-icon nc-bulb-63" /> 範例
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
