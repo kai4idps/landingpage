@@ -9,18 +9,18 @@
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from "react"
 // react plugin used to create switch buttons
-import Switch from "react-bootstrap-switch";
+import Switch from "react-bootstrap-switch"
 // plugin that creates slider
-import Slider from "nouislider";
+import Slider from "nouislider"
 
 // reactstrap components
 import {
@@ -33,8 +33,8 @@ import {
   InputGroup,
   Container,
   Row,
-  Col,
-} from "reactstrap";
+  Col
+} from "reactstrap"
 
 function SectionButtons() {
   React.useEffect(() => {
@@ -47,8 +47,8 @@ function SectionButtons() {
         start: [37.5],
         connect: [true, false],
         step: 0.5,
-        range: { min: 0, max: 100 },
-      });
+        range: { min: 0, max: 100 }
+      })
     }
     if (
       !document.getElementById("sliderDouble").classList.contains("noUi-target")
@@ -57,10 +57,10 @@ function SectionButtons() {
         start: [20, 80],
         connect: [false, true, false],
         step: 1,
-        range: { min: 0, max: 100 },
-      });
+        range: { min: 0, max: 100 }
+      })
     }
-  });
+  })
   return (
     <>
       <div className="section section-buttons">
@@ -240,7 +240,7 @@ function SectionButtons() {
                 className="mr-1"
                 color="link"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 Default
               </Button>
@@ -248,7 +248,7 @@ function SectionButtons() {
                 className="btn-link mr-1"
                 color="primary"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 Primary
               </Button>
@@ -256,7 +256,7 @@ function SectionButtons() {
                 className="btn-link mr-1"
                 color="success"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 Success
               </Button>
@@ -264,7 +264,7 @@ function SectionButtons() {
                 className="btn-link mr-1"
                 color="info"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 Info
               </Button>
@@ -272,7 +272,7 @@ function SectionButtons() {
                 className="btn-link mr-1"
                 color="warning"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 Warning
               </Button>
@@ -280,7 +280,7 @@ function SectionButtons() {
                 className="btn-link mr-1"
                 color="danger"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 Danger
               </Button>
@@ -288,7 +288,7 @@ function SectionButtons() {
                 className="btn-link"
                 color="neutral"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                onClick={e => e.preventDefault()}
               >
                 Neutral
               </Button>
@@ -456,7 +456,7 @@ function SectionButtons() {
         </Container>
       </div>
     </>
-  );
+  )
 }
 
-export default SectionButtons;
+export default SectionButtons

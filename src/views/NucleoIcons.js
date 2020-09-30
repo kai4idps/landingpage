@@ -9,7 +9,7 @@
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
@@ -17,16 +17,16 @@
 
 */
 /*eslint-disable*/
-import React from "react";
+import React from "react"
 
 function NucleoIcons() {
-  document.documentElement.classList.remove("nav-open");
+  document.documentElement.classList.remove("nav-open")
   React.useEffect(() => {
-    document.body.classList.add("demo-icons");
+    document.body.classList.add("demo-icons")
     return function cleanup() {
-      document.body.classList.remove("demo-icons");
-    };
-  });
+      document.body.classList.remove("demo-icons")
+    }
+  })
   return (
     <>
       <header>
@@ -645,7 +645,7 @@ function NucleoIcons() {
         </section>
       </div>
     </>
-  );
+  )
 }
 
-export default NucleoIcons;
+export default NucleoIcons

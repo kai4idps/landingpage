@@ -9,17 +9,17 @@
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 // nodejs library that concatenates strings
-import classnames from "classnames";
+import classnames from "classnames"
 
 // reactstrap components
 import {
@@ -29,17 +29,17 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container,
-} from "reactstrap";
+  Container
+} from "reactstrap"
 
 function ExamplesNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent")
+  const [navbarCollapse, setNavbarCollapse] = React.useState(false)
 
   const toggleNavbarCollapse = () => {
-    setNavbarCollapse(!navbarCollapse);
-    document.documentElement.classList.toggle("nav-open");
-  };
+    setNavbarCollapse(!navbarCollapse)
+    document.documentElement.classList.toggle("nav-open")
+  }
 
   React.useEffect(() => {
     const updateNavbarColor = () => {
@@ -47,21 +47,21 @@ function ExamplesNavbar() {
         document.documentElement.scrollTop > 299 ||
         document.body.scrollTop > 299
       ) {
-        setNavbarColor("");
+        setNavbarColor("")
       } else if (
         document.documentElement.scrollTop < 300 ||
         document.body.scrollTop < 300
       ) {
-        setNavbarColor("navbar-transparent");
+        setNavbarColor("navbar-transparent")
       }
-    };
+    }
 
-    window.addEventListener("scroll", updateNavbarColor);
+    window.addEventListener("scroll", updateNavbarColor)
 
     return function cleanup() {
-      window.removeEventListener("scroll", updateNavbarColor);
-    };
-  });
+      window.removeEventListener("scroll", updateNavbarColor)
+    }
+  })
   return (
     <Navbar
       className={classnames("fixed-top", navbarColor)}
@@ -74,7 +74,7 @@ function ExamplesNavbar() {
             data-placement="bottom"
             to="/index"
             target="_blank"
-            title="Coded by Creative Tim"
+            title="Coded by kai"
             tag={Link}
           >
             Paper Kit 2
@@ -82,7 +82,7 @@ function ExamplesNavbar() {
           <button
             aria-expanded={navbarCollapse}
             className={classnames("navbar-toggler navbar-toggler", {
-              toggled: navbarCollapse,
+              toggled: navbarCollapse
             })}
             onClick={toggleNavbarCollapse}
           >
@@ -158,7 +158,7 @@ function ExamplesNavbar() {
         </Collapse>
       </Container>
     </Navbar>
-  );
+  )
 }
 
-export default ExamplesNavbar;
+export default ExamplesNavbar

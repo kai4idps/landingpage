@@ -1,24 +1,5 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by kai
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react"
-
-// reactstrap components
+import { Button } from "reactstrap"
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js"
@@ -40,7 +21,7 @@ import SectionLogin from "views/index-sections/SectionLogin.js"
 import SectionExamples from "views/index-sections/SectionExamples.js"
 import SectionDownload from "views/index-sections/SectionDownload.js"
 
-function Index() {
+function ExampleSections() {
   document.documentElement.classList.remove("nav-open")
   React.useEffect(() => {
     document.body.classList.add("index")
@@ -48,13 +29,23 @@ function Index() {
       document.body.classList.remove("index")
     }
   })
+
   return (
     <>
       <IndexNavbar />
       <IndexHeader />
+      <Button
+        color="warning"
+        size="lg"
+        href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
+        block
+      >
+        官方網站
+      </Button>
+
       <div className="main">
         <SectionButtons />
-        {/* <SectionNavbars />
+        <SectionNavbars />
         <SectionNavigation />
         <SectionProgress />
         <SectionNotifications />
@@ -65,11 +56,11 @@ function Index() {
         <SectionDark />
         <SectionLogin />
         <SectionExamples />
-        <SectionDownload /> */}
+        <SectionDownload />
         <DemoFooter />
       </div>
     </>
   )
 }
 
-export default Index
+export default ExampleSections

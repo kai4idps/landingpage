@@ -9,14 +9,14 @@
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from "react"
 
 // reactstrap components
 import {
@@ -27,8 +27,8 @@ import {
   Carousel,
   CarouselItem,
   CarouselIndicators,
-  CarouselCaption,
-} from "reactstrap";
+  CarouselCaption
+} from "reactstrap"
 
 // core components
 
@@ -36,43 +36,43 @@ const items = [
   {
     src: require("assets/img/soroush-karimi.jpg"),
     altText: "Somewhere",
-    caption: "Somewhere",
+    caption: "Somewhere"
   },
   {
     src: require("assets/img/federico-beccari.jpg"),
     altText: "Somewhere else",
-    caption: "Somewhere else",
+    caption: "Somewhere else"
   },
   {
     src: require("assets/img/joshua-stannard.jpg"),
     altText: "Here it is",
-    caption: "Here it is",
-  },
-];
+    caption: "Here it is"
+  }
+]
 
 function SectionCarousel() {
-  const [activeIndex, setActiveIndex] = React.useState(0);
-  const [animating, setAnimating] = React.useState(false);
+  const [activeIndex, setActiveIndex] = React.useState(0)
+  const [animating, setAnimating] = React.useState(false)
   const onExiting = () => {
-    setAnimating(true);
-  };
+    setAnimating(true)
+  }
   const onExited = () => {
-    setAnimating(false);
-  };
+    setAnimating(false)
+  }
   const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  };
+    if (animating) return
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1
+    setActiveIndex(nextIndex)
+  }
   const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  };
+    if (animating) return
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1
+    setActiveIndex(nextIndex)
+  }
+  const goToIndex = newIndex => {
+    if (animating) return
+    setActiveIndex(newIndex)
+  }
   return (
     <>
       <div className="section pt-o" id="carousel">
@@ -90,7 +90,7 @@ function SectionCarousel() {
                     activeIndex={activeIndex}
                     onClickHandler={goToIndex}
                   />
-                  {items.map((item) => {
+                  {items.map(item => {
                     return (
                       <CarouselItem
                         onExiting={onExiting}
@@ -103,15 +103,15 @@ function SectionCarousel() {
                           captionHeader=""
                         />
                       </CarouselItem>
-                    );
+                    )
                   })}
                   <a
                     className="left carousel-control carousel-control-prev"
                     data-slide="prev"
                     href="#pablo"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      previous();
+                    onClick={e => {
+                      e.preventDefault()
+                      previous()
                     }}
                     role="button"
                   >
@@ -122,9 +122,9 @@ function SectionCarousel() {
                     className="right carousel-control carousel-control-next"
                     data-slide="next"
                     href="#pablo"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      next();
+                    onClick={e => {
+                      e.preventDefault()
+                      next()
                     }}
                     role="button"
                   >
@@ -138,7 +138,7 @@ function SectionCarousel() {
         </Container>
       </div>{" "}
     </>
-  );
+  )
 }
 
-export default SectionCarousel;
+export default SectionCarousel

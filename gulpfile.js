@@ -1,5 +1,5 @@
-const gulp = require("gulp");
-const gap = require("gulp-append-prepend");
+const gulp = require("gulp")
+const gap = require("gulp-append-prepend")
 
 gulp.task("licenses", async function () {
   // this is to add Creative Tim licenses in the production mode for the minified js
@@ -15,7 +15,7 @@ gulp.task("licenses", async function () {
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 * Copyright 2020 Creative Tim (http://www.creative-tim.com)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
@@ -23,7 +23,7 @@ gulp.task("licenses", async function () {
 
 */`)
     )
-    .pipe(gulp.dest("./", { overwrite: true }));
+    .pipe(gulp.dest("./", { overwrite: true }))
 
   // this is to add Creative Tim licenses in the production mode for the minified html
   gulp
@@ -38,7 +38,7 @@ gulp.task("licenses", async function () {
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 * Copyright 2020 Creative Tim (http://www.creative-tim.com)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
@@ -46,7 +46,7 @@ gulp.task("licenses", async function () {
 
 -->`)
     )
-    .pipe(gulp.dest("./", { overwrite: true }));
+    .pipe(gulp.dest("./", { overwrite: true }))
 
   // this is to add Creative Tim licenses in the production mode for the minified css
   gulp
@@ -61,7 +61,7 @@ gulp.task("licenses", async function () {
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 * Copyright 2020 Creative Tim (http://www.creative-tim.com)
 
-* Coded by Creative Tim
+* Coded by kai
 
 =========================================================
 
@@ -69,6 +69,6 @@ gulp.task("licenses", async function () {
 
 */`)
     )
-    .pipe(gulp.dest("./", { overwrite: true }));
-  return;
-});
+    .pipe(gulp.dest("./", { overwrite: true }))
+  return
+})
