@@ -119,7 +119,7 @@ function IndexNavbar() {
             </NavItem>
             <NavItem>
               <NavLink
-                onClick={() => history.push("/codepen")}
+                onClick={() => history.push("/portfolio")}
                 target="_self"
                 style={{ cursor: "pointer" }}
               >

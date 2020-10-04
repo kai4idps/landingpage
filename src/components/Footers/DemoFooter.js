@@ -57,7 +57,7 @@ function DemoFooter() {
           </nav> */}
           <div className="credits ml-auto">
             <span className="copyright">
-              © {new Date().getFullYear()}, made with{" "}
+              © {new Date().getFullYear()}, made{" "}
               <i className="fa fa-heart heart" /> by kai
             </span>
           </div>

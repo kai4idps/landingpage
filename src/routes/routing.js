@@ -4,7 +4,7 @@ import LandingPage from "views/examples/LandingPage.js"
 import ProfilePage from "views/examples/ProfilePage.js"
 import RegisterPage from "views/examples/RegisterPage.js"
 import ExampleSections from "components/examples/ExampleSections"
-import Codepen from "components/codepen/Codepen"
+import Portfolio from "components/portfolio/Portfolio"
 
 const themeRoutes = [
   { path: "/index", component: Index },
@@ -13,7 +13,7 @@ const themeRoutes = [
   { path: "/register-page", component: RegisterPage },
   { path: "/profile-page", component: ProfilePage },
   { path: "/example", component: ExampleSections },
-  { path: "/codepen", component: Codepen }
+  { path: "/portfolio", component: Portfolio },
 ]
 
 export default themeRoutes
